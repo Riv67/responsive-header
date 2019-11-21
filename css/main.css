@@ -41,6 +41,7 @@ a:visited {
 }
 
 nav a {
+  white-space: nowrap;
   padding: .5em .75em;
 }
 
@@ -77,7 +78,7 @@ nav a:hover {
     text-align: center;
   }
 
-  header {
+  html {
     font-size: 110%;
     line-height: 1.4;
   }
@@ -86,9 +87,12 @@ nav a:hover {
 
 @media only screen and (min-width: 60em) {
 
-  header {
+  html {
     font-size: 120%;
     line-height: 1.5;
+  }
+
+  header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -108,3 +112,13 @@ nav a:hover {
     text-align: right;
     justify-content: flex-end;
   }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+}

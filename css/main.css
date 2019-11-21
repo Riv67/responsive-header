@@ -22,11 +22,11 @@ body {
 }
 
 header {
+  color: #fff;
   background-color: #18294f;
 }
 
-h1 {
-  color: #fff;
+header h1 {
   font-size: 2rem;
   text-align: center;
   margin: 0;
@@ -40,7 +40,7 @@ a:visited {
   text-decoration: none;
 }
 
-a {
+nav a {
   padding: .5em .75em;
 }
 
@@ -51,12 +51,13 @@ nav ul {
   margin: 0;
 }
 
-a:hover {
+nav a:hover {
   color: #fff;
-  background-color: #6c8fe0
+  background-color: #6c8fe0;
 }
 
 @media only screen and (min-width: 25em) {
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -68,3 +69,42 @@ a:hover {
   }
 
 }
+
+@media only screen and (min-width: 38em) {
+
+  li {
+    width: 25%;
+    text-align: center;
+  }
+
+  header {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header {
+    font-size: 120%;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  header h1 {
+    padding: .5em .75em;
+  }
+
+  li {
+    white-space: nowrap;
+    padding: 0;
+    width: auto;
+  }
+
+  nav ul {
+    text-align: right;
+    justify-content: flex-end;
+  }
